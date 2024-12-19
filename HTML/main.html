@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student MarkSheet</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <h1 class="title">Student MarkSheet Generator</h1>
+
+    <div class="container">
+        <table>
+            <tr>
+                <td class="entry-title">Entry Your marks with modules</td>
+            </tr>
+            <form action="#" id="Marksheet">
+                <tr>
+                    <td class="form-section">
+                        <table>
+                            <tr>
+                                <td>Student Name </td>
+                                <td colspan="3"> <input type="text" id="std-nme" required></td>
+                            </tr>
+                            <tr>
+                                <td>Registration No </td>
+                                <td colspan="3"> <input type="text" id="reg-no" required></td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="label">Marks Obtained </td>
+                                <td class="label"> Total Marks</td>
+                            </tr>
+                            <tr>
+                                <td>Module 1</td>
+                                <td><input type="number" id="m1" value="none" min="0" max="100" oninput="calculateTotal()"></td>
+                                <td>/100</td>
+                                <td rowspan="5" class="total-section">
+                                    <div>
+                                        <p id="total-marks" class="total">0</p>
+                                        <p class="total">500</p>
+                                    </div>
+                                </td> 
+                            </tr>
+                            <tr>
+                                <td>Module 2</td>
+                                <td><input type="number" id="m2" value="none" min="0" max="100" oninput="calculateTotal()"></td>
+                                <td>/100</td>
+                            </tr>
+                            <tr>
+                                <td>Module 3</td>
+                                <td><input type="number" id="m3" value="none" min="0" max="100" oninput="calculateTotal()"></td>
+                                <td>/100</td>
+                            </tr>
+                            <tr>
+                                <td>Module 4</td>
+                                <td><input type="number" id="m4" value="none" min="0" max="100" oninput="calculateTotal()"></td>
+                                <td>/100</td>
+                            </tr>
+                            <tr>
+                                <td>Module 5</td>
+                                <td><input type="number" id="m5" value="none" min="0" max="100" oninput="calculateTotal()"></td>
+                                <td>/100</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <td class="buttons">
+                    <button type="button" onclick="generatePerformance()">Submit</button>
+                    <button type="reset" onclick="resetFields()">Clear</button>
+                </td>
+            </form>
+            <tr>
+                <td class="preview-title">Result Preview</td>
+            </tr>
+            <tr>
+                <td class="result-preview">
+                    <table class="result-table">
+                        <tr>
+                            <td class="label">Student Name </td>
+                            <td id="stuName"></td>
+                        </tr>
+                        <tr>
+                            <td class="label">Registration No </td>
+                            <td id="regNo"></td>
+                        </tr>
+                    </table>
+                </td>
+                <td colspan="2" id="percent" class="percent"></td>
+                <td id="result" class="result"></td>
+            </tr>
+        </table>
+    </div>
+    <script src="../JS/script.js"></script>
+</body>
+</html>
