@@ -115,3 +115,24 @@ table {
     text-align: center;
     padding: 10px;
 }
+
+.GPA button {
+    padding: 10px 20px;
+    background-color: #a2c9e2;
+    color: rgb(27, 26, 26);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.GPA a {
+    text-decoration: none;
+    background-color: #a2c9e2;
+    font-size: 20px;
+    color: blue;
+}
+
+.GPA a:hover {
+    color: red;
+}

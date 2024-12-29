@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA Calculator</title>
+    <link rel="stylesheet" href="../CSS/GPAstyle.css">
+</head>
+<body>
+    <h1>GPA Calculator</h1>
+    <div class="container">
+        <div id="modules">
+            <div class="module">
+                <input type="text" placeholder="Module Name" class="module-name">
+                <input type="number" placeholder="Credits" class="module-credits">
+                <input type="text" placeholder="Grade (A, B, C, etc.)" class="module-grade">
+            </div>
+        </div>
+        <div class="add-module">
+            <button onclick="addModule()" class="button">Add Module</button>
+        </div>
+        <div class="add-module">
+            <button onclick="calculateGPA()" class="button">Calculate GPA</button>
+        </div>
+        <div class="result" id="result">
+            <h2>Results:</h2>
+            <p id="gpa-result">Enter modules and click "Calculate GPA".</p>
+        </div>
+
+    </div>
+
+    <div class="MarkSheet">
+        <button>
+            <h3><strong>To Go back to student mark sheet</strong></h3>
+            <a href="main.html" alt="Student Mark Sheet">Click Me</a>
+        </button>
+    </div>
+    <script src="../JS/GPAscript.js"></script>
+</body>
+</html>

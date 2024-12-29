@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+    color: #2c3e50;
+    margin: 20px;
+}
+.container {
+    background: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+}
+.module {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.module input {
+    padding: 10px;
+    border: 1px solid #dfe6e9;
+    border-radius: 5px;
+    flex: 1;
+}
+.add-module {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.button {
+    padding: 10px 20px;
+    background-color: #0e6443;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.button:hover {
+    background-color: #a3e2b3;
+}
+.result {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ecf0f1;
+    border: 1px solid #dfe6e9;
+    border-radius: 10px;
+}
+.result h2 {
+    margin: 0 0 10px 0;
+    color: #27ae60;
+}
+
+.MarkSheet button {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #a2c9e2;
+    color: rgb(27, 26, 26);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.MarkSheet a {
+    text-decoration: none;
+    font-size: 20px;
+    color: blue;
+}
+
+.MarkSheet a:hover {
+    color: red;
+}
